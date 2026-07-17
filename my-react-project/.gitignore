@@ -1,4 +1,32 @@
-# Logs
+# Hệ thống và Editor
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode-test
+.tern-port
+
+# Thư mục phụ thuộc (Dependencies) và Trình quản lý gói
+node_modules/
+jspm_packages/
+web_modules/
+bower_components/
+.pnpm-store
+.yarn-integrity
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Nhật ký (Logs) và Dữ liệu Runtime
 logs
 *.log
 npm-debug.log*
@@ -6,19 +34,56 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+pids
+*.pid
+*.seed
+*.pid.lock
+.node_repl_history
 
-node_modules
+# Kiểm thử và Coverage
+lib-cov
+coverage
+*.lcov
+.nyc_output
+
+# Build, Output và Cache chung
 dist
 dist-ssr
-*.local
+.output
+out
+build/Release
+.lock-wscript
+.grunt
+.cache
+*.tgz
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Biến môi trường
+*.local
+.env
+.env.*
+!.env.example
+
+# Công cụ Build cụ thể (Vite, Next, Nuxt, Svelte, v.v.)
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.parcel-cache
+.next
+.nuxt
+.vuepress/dist
+.temp
+.svelte-kit/
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+
+# Cloud & Database (Firebase, Serverless, v.v.)
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
